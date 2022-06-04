@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres
+    restart: always
+    container_name: main_container_app
+    ports:
+      - 6889:5432
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_USER: main_user
+      POSTGRES_DB: main_db
